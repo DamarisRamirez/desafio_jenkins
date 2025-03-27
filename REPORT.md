@@ -2,25 +2,61 @@
 
 ## Summary
 
-This report outlines the steps taken to configure and execute the CI/CD pipeline for the Task API project.
+Este reporte constata los pasos realizados para configurar y ejecutar un pipeline CI/CD con Jenkins
 
 ## Steps
 
 1. **Git Repository Management**  
      
-   - Initialized a local repository and connected it to GitHub.
+   - Se inicializó un repositorio local de git y se conectó a GitHub
 
-   
+
 
 2. **Docker Integration**  
      
-   - Created a Dockerfile to containerize the application.
+   - Se crea archivo Dockerfile 
 
    
 
 3. **Jenkins Configuration**  
      
-   - Configured Jenkins to automate the build, test, and deploy process.
+   - Se configura Jenkins en archivo Jenkisfile con instrucciones de:
+         ○ Clonación de repositorio remoto GitHub. 
+         ○ Instalación de dependencias (npm install).
+         ○ Ejecutar las pruebas automatizadas (npm test).
+         ○ Construcción de una imagen Docker a partir del Dockerfile
+
+### Clonar el Repositorio
+
+- Jenkins obtiene el código desde el repositorio usando `checkout scm`.
+
+ 
+
+### Instalar Dependencias
+
+- Ejecuta `npm install` para instalar las dependencias del proyecto.
+
+ 
+
+### Ejecutar Pruebas
+
+- Ejecuta `npm test` para correr las pruebas automatizadas.
+
+ 
+
+### Construir y Ejecutar Docker
+
+- Construye una imagen con `docker build -t desafio_jenkins .`.
+
+- Ejecuta el contenedor con `docker run -p 3000:3000 desafio_jenkins`.
+
+ 
+
+### Post-Ejecución
+
+- Si el pipeline es exitoso, muestra "Pipeline completado con éxito".
+
+- Si falla en algún paso, muestra "El pipeline ha fallado".
 
 ## Issues Encountered
 
@@ -28,5 +64,5 @@ This report outlines the steps taken to configure and execute the CI/CD pipeline
 
 ## Results
 
-- \[Add screenshots or logs of successful pipeline runs\]
+- Resultados visibles en documento pdf ./resultadosJenkins.pdf
 
