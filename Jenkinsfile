@@ -7,7 +7,9 @@ pipeline {
     stages { 
         stage('Clonar Repositorio') {
             steps {
-                git 'https://github.com/DamarisRamirez/desafio_jenkins.git'
+                echo "** Clonando repositorio"
+               // git 'https://github.com/DamarisRamirez/desafio_jenkins.git'
+                checkout scm
             }
 
         }
