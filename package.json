@@ -1,0 +1,15 @@
+{
+  "name": "desafio_jenkins",
+  "version": "1.0.0",
+  "description": "Desafio Sistema de gestión de tareas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
