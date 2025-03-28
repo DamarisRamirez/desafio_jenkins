@@ -8,23 +8,22 @@ Este reporte constata los pasos realizados para configurar y ejecutar un pipelin
 
 1. **Git Repository Management**  
      
-   - Se inicializó un repositorio local de git y se conectó a GitHub
+- Se inicializó un repositorio local de git y se conectó a GitHub
 
 
 
 2. **Docker Integration**  
      
-   - Se crea archivo Dockerfile 
+- Se crea archivo Dockerfile 
 
    
 
 3. **Jenkins Configuration**  
-     
-   - Se configura Jenkins en archivo Jenkisfile con instrucciones de:
-         ○ Clonación de repositorio remoto GitHub. 
-         ○ Instalación de dependencias (npm install).
-         ○ Ejecutar las pruebas automatizadas (npm test).
-         ○ Construcción de una imagen Docker a partir del Dockerfile
+Se configura Jenkins en archivo Jenkisfile con instrucciones de:
+   1. Clonación de repositorio remoto GitHub. 
+   2. Instalación de dependencias (npm install).
+   3. Ejecutar las pruebas automatizadas (npm test).
+   4. Construcción de una imagen Docker a partir del Dockerfile
 
 ### Clonar el Repositorio
 
@@ -64,5 +63,5 @@ Este reporte constata los pasos realizados para configurar y ejecutar un pipelin
 
 ## Results
 
-- Resultados visibles en documento pdf ./resultadosJenkins.pdf
+- Resultados visibles en documento pdf ./documents/resultadosJenkins.pdf
 
